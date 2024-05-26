@@ -1,0 +1,364 @@
+<window>
+<header>
+width:2800;
+    height:1500;
+    <header>
+           <image>
+           x:4;
+           y:7;
+           url:icon.png;
+           width:30;
+           height:30;
+          <\image>
+<label>
+x:14;
+y:10;
+height:10;
+width:600;
+text:Test Macro GTK-2022-2023;
+taille:10;
+<\label>
+<\header>
+<body>
+
+<BarreMenu>
+direction:1;
+x:0;
+y:0;
+<item>
+label:Fichier;
+<subMenu>
+orientation:0;
+<item>
+label:Enregistrer;
+icon:application-exit;
+<\item>
+<item>
+
+label:Enregistrer sous;
+icon:application-exit;
+<\item>
+<item>
+
+label:Enregistrer au format PDF;
+icon:application-exit;
+<\item>
+<item>
+
+label:Ouvrir;
+icon:application-exit;
+<\item>
+<item>
+
+label:Fermer;
+icon:application-exit;
+<\item>
+<\subMenu>
+<\item>
+<item>
+label:Accueil;
+<\item>
+<item>
+label:Insertion;
+<\item>
+<\BarreMenu>
+
+
+<label>
+x:440;
+y:10;
+height:10;
+width:230;
+text:Listes Choix Multiples;
+taille:9;
+<\label>
+<frame>
+x:440;
+y:20;
+width:90;
+height:70;
+<Checkbutton>
+x:5;
+y:1;
+label:_Mon 1er Choix;
+<\Checkbutton>
+<Checkbutton>
+x:5;
+y:26;
+label:_Mon 2d Choix;
+<\Checkbutton>
+<Checkbutton>
+x:5;
+y:51;
+label:_Mon 3e Choix;
+<\Checkbutton>
+<Checkbutton>
+x:5;
+y:76;
+label:_Mon dernier choix;
+<\Checkbutton>
+<\frame>
+
+
+
+
+
+
+<label>
+x:10;
+y:230;
+height:10;
+width:260;
+text:Liste Deroulante: Multi Choix;
+taille:9;
+<\label>
+
+<frame>
+y:240;
+x:10;
+width:400;
+height:100;
+
+<label>
+x:7;
+y:7;
+text:Choix parmis 5:;
+taille:10;
+width:150;
+<\label>
+<combo>
+x:200;
+y:7;
+item:1;
+item:2;
+item:3;
+item:4;
+item:5;
+item:Faites votre choix;
+<\combo>
+
+<label>
+x:7;
+y:50;
+text:Choix parmis 7:;
+width:150;
+taille:10;
+<\label>
+<combo>
+x:200;
+y:50;
+item:Choix7;
+item:Choix6;
+item:Choix5;
+item:Choix4;
+item:Choix3;
+item:Choix2;
+item:Choix1;
+item:Faites votre choix;
+<\combo>
+<\frame>
+
+
+
+
+
+<label>
+x:460;
+y:245;
+height:10;
+width:260;
+text:Boutons Radio horizontales;
+taille:9;
+<\label>
+
+<frame>
+x:460;
+y:260;
+width:300;
+height:5;
+<ButtonRadioGroupe>
+    <ButtonRadio>
+        label:Premier;
+        x:1;
+        y:0;
+        group:Pere;
+        active:false;
+        sensitive:TRUE;
+    <\ButtonRadio>
+    <ButtonRadio>
+        label:Deuxieme;
+        x:100;
+        y:0;
+        group:item;
+         active:false;
+         sensitive:TRUE;
+    <\ButtonRadio>
+    <ButtonRadio>
+        label:Troisieme;
+        x:230;
+        y:0;
+        group:item;
+         active:false;
+         sensitive:TRUE;
+    <\ButtonRadio>
+<\ButtonRadioGroupe>
+<\frame>
+
+
+
+
+<button>
+label:_OK;
+name:button15;
+reliefMode:1;
+sensitive:TRUE;
+width:100;
+alignementHorizental:2;
+alignementVertical:3;
+height:50;  
+x:15;
+y:450;
+signal:afficherboite;
+image_background:image.png;
+<image>
+           x:15;
+           y:450;
+           url:icon.png;
+           width:30;
+           height:30;
+          <\image>
+<\button>
+
+
+<button>
+label:_Quitter;
+name:button55;
+width:100;
+height:50;
+x:250;
+y:450;
+signal:close;
+image_background:plante.jpg;
+<image>
+           x:250;
+           y:450;
+           url:icon.png;
+           width:30;
+           height:30;
+          <\image>
+<\button>
+
+
+
+
+
+
+
+<label>
+x:10;
+y:530;
+height:10;
+width:220;
+text:Boutons Radio Verticales;
+taille:9;
+<\label>
+<frame>
+x:3;
+y:540;
+width:300;
+height:5;
+<ButtonRadioGroupe>
+<ButtonRadio>
+label:Faible;
+x:1;
+y:1;
+group:Pere;
+<\ButtonRadio>
+<ButtonRadio>
+label:Moyen;
+x:1;
+y:40;
+group:item;
+<\ButtonRadio>
+<ButtonRadio>
+label:Assez Bien;
+x:1;
+y:70;
+group:item;
+<\ButtonRadio>
+<ButtonRadio>
+label:Bien;
+x:1;
+y:100;
+group:item;
+<\ButtonRadio>
+<ButtonRadio>
+label:T.Bien;
+x:1;
+y:130;
+group:item;
+<\ButtonRadio>
+<\ButtonRadioGroupe>
+
+<\frame>
+
+
+
+<label>
+x:490;
+y:355;
+height:10;
+width:280;
+text:Saisie du login mot de passe;
+taille:10;
+<\label>
+<frame>
+x:490;
+y:370;
+width:300;
+height:300;
+<zonetxt>
+x:10;
+y:10;
+height:25;
+width:200;
+editable:true;
+visible:true;
+icone:mail-send;
+text:Login;
+<\zonetxt>
+<zonetxt>
+x:10;
+y:50;
+height:25;
+width:200;
+editable:true;
+visible:false;
+invisibleCar:*;
+placeholder:Mot de passe;
+<\zonetxt>
+
+<Checkbutton>
+x:10;
+y:90;
+label:_Maintenir la connexion;
+active:false;
+sensitive:TRUE;
+<\Checkbutton>
+
+<button>
+label:Se connecter ;
+name:button45;
+width:100;
+height:50;
+x:8;
+y:120;
+<\button>
+
+<\frame>
+
+
+
+
+<\body>
+<\window>

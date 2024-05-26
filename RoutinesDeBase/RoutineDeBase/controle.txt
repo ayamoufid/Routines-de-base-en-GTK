@@ -1,0 +1,257 @@
+<window>
+    width:1000;
+    height:1500;
+    name:fenetre;
+<header>
+<image>
+url:image.png;
+x:0;
+y:0;
+width:40;
+height:40;
+<\image>
+<label>
+x:150;
+y:0;
+text:Test Macro GTK 2022-2023;
+width:400;
+taille:10;
+<\label>
+<\header>
+<body>
+                <BarreMenu>
+                direction:1;
+                x:10;
+                y:10;
+                <item>
+                label:Fichier;
+                <subMenu> 
+                orientation:0;
+                <item> 
+                label:Sous Choix1;
+                icon:application-exit;
+                <\item>
+                <item>
+                label:Sous Choix2;
+                icon:application-exit;
+                <\item>
+                <item>
+                label:Sous Choix3;
+                icon:application-exit;
+                <\item>
+                <\subMenu>
+                <\item>
+                <item>
+                label:Accueil;
+                <\item>
+                <item>
+                label:Insertion;
+                <\item>
+                <\BarreMenu>    
+               
+                <label>
+                x:420;
+                y:20;
+                width:300;
+                height:20;
+                text:Liste choix multiple;
+                color: black;
+                taille: 10;
+                <\label>
+                <frame>
+                x:500;
+                y:30;
+                width:200;
+                height:60;
+                <Checkbutton>
+                x:0;
+                y:0;
+                label:_Mon choix 1; 
+                active:FALSE; 
+                sensitive:TRUE;  
+                <\Checkbutton>
+                <Checkbutton>
+                x:0;
+                y:20;
+                label:_Mon choix 2;
+                active:TRUE; 
+                sensitive:TRUE;  
+                <\Checkbutton>
+                <Checkbutton>
+                x:0;
+                y:40;
+                label:_Mon choix 3; 
+                active:FALSE; 
+                sensitive:TRUE;  
+                <\Checkbutton>
+                <Checkbutton>
+                x:0;
+                y:60;
+                label:_Mon dernier choix 1; 
+                active:FALSE; 
+                sensitive:TRUE;  
+                <\Checkbutton>
+                <\frame>
+
+                <label>
+                x:450;
+                y:250;
+                width:300;
+                height:20;
+                text:Boutons Radio horizontale;
+                color: black;
+                taille: 10;
+                <\label>
+                <frame>
+                    x:500;
+                    y:260;
+                    width:450;
+                    height:30;
+                    <ButtonRadioGroupe>
+                    <ButtonRadio>
+                    label:Premier; 
+                    x:0;
+                    y:0;
+                    active:False; 
+                    group:Pere;
+                    sensitive:TRUE;
+                    <\ButtonRadio>
+                    <ButtonRadio>
+                    label:Deuxieme; 
+                    x:150;
+                    y:0;
+                    active:False; 
+                    group:item;
+                    sensitive:TRUE;
+                    <\ButtonRadio>
+                    <ButtonRadio>
+                    label:Troisieme; 
+                    x:300;
+                    y:0;
+                    active:False; 
+                    group:item;
+                    sensitive:TRUE;
+                    <\ButtonRadio>
+                    <\ButtonRadioGroupe>
+                <\frame>
+
+                <label>
+                x:0;
+                y:100;
+                width:250;
+                height:20;
+                text:List Déroulante : Multi Choix;
+                color: black;
+                taille: 10;
+                <\label>
+                
+                <frame>
+                x:0;
+                y:120;
+                width:350;
+                height:100;
+                <label>
+                    x:0;
+                    y:0;
+                    width:100;
+                    height:20;
+                    text:Choix parmix 5;
+                    color: black;
+                    taille: 9;
+                    <\label>
+                    <combo>
+                    x:120;
+                    y:0;
+                    height:15;
+                    width:1;
+                    item:choix 1;
+                    item:choix 2;
+                    item:choix 3;
+                    item:choix 4;
+                    item:choix 5;
+                    direction:1;
+                    entry:1;
+                    <\combo>    
+
+                    <label>
+                    x:0;
+                    y:40;
+                    width:100;
+                    height:20;
+                    text:Choix parmix 7;
+                    color: black;
+                    taille: 9;
+                    <\label>
+                    <combo>
+                    x:120;
+                    y:40;
+                    height:15;
+                    width:1;
+                    item:choix 1;
+                    item:choix 2;
+                    item:choix 3;
+                    item:choix 4;
+                    item:choix 5;
+                    item:choix 6;
+                    item:choix 7;
+                    direction:1;
+                    entry:1;
+                    <\combo>    
+                <\frame>
+                <button>
+                    label:_ok;
+                    height:20;
+                    width:100;
+                    x:0;
+                    y:300;
+                    image_background:image.png;
+                    color:pink;
+                    name:ici;
+                <\button>
+                <button>
+                    label:_Quitter;
+                    height:20;
+                    width:100;
+                    x:200;
+                    y:300;
+                    signal:close;
+                <\button>
+
+                <frame>
+                x:0;
+                y:320;
+                width:170;
+                height:60;
+            <ButtonRadioGroupe>
+                
+                <ButtonRadio>
+                    label:Assez bien; 
+                    x:0;
+                    y:10;
+                    active:False; 
+                    group:item;
+                    sensitive:TRUE;
+                <\ButtonRadio>
+                <ButtonRadio>
+                    label:Bien; 
+                    x:0;
+                    y:20;
+                    active:TRUE; 
+                    group:item;
+                    sensitive:TRUE;
+                <\ButtonRadio>
+                <ButtonRadio>
+                    label:T.Bien; 
+                    x:0;
+                    y:30;
+                    active:TRUE; 
+                    group:item;
+                    sensitive:TRUE;
+                <\ButtonRadio>
+            <\ButtonRadioGroupe>
+            
+    <\frame>
+
+               
+<\body>
+<\window>
